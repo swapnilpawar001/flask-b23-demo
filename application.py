@@ -22,7 +22,8 @@ def get_instance_id():
 
 @app.route("/")
 def home():
-    return f"<h1>Hello Batch 23 this is the demontsration of python deployment with flask service </h1><p>Instance: {get_instance_id()}</p>"
+    return f"<h1>Hello Batch 23 this is the demontsration of python deployment with flask service using code deploy</h1><p>Instance: {get_instance_id()}</p>"
 
 if __name__ == "__main__":
+
     application.run(host="0.0.0.0", port=8080)
