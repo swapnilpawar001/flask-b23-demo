@@ -2,4 +2,9 @@ version: 0.0
 os: linux
 files:
   - source: /
-    destination: /home/ec2-user/deploy-test/
+    destination: /home/ec2-user/flask-app/
+hooks:
+  ApplicationStart:
+    - location: scripts/restart_server.sh
+      timeout: 300
+      runas: root
