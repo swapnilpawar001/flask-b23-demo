@@ -14,7 +14,7 @@ phases:
   build:
     commands:
       - echo "Zipping the package..."
-      - zip -r application.zip application.py requirements.txt
+      - zip -r application.zip application.py requirements.txt appspec.yml
 artifacts:
   files:
     - application.zip
